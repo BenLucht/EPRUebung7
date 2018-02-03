@@ -2,12 +2,16 @@
 Main Module for EPR7 exercises.
 """
 
-from text import text
+import hufftext
 
-__author__ = "xxxxxxx: Ben, xxxxxxx: Anne"
+__author__ = "4897491: Benjamin Lucht, 2188645: Anne Schwarz"
 __copyright__ = "Copyright 2017/2018 – EPR-Goethe-Uni"
 __credits__ = "We would like to thank our coffee for the morning motivation."
-__email__ = "xxxxxxxx@stud.uni-frankfurt.de, xxxxxxxx@stud.uni-frankfurt.de"
+__email__ = "9047212@stud.uni-frankfurt.de, anne@frauschwarz.org"
+
+def main():
+    t = hufftext.Huff_Text('src/John Maynard.txt')
+    print(t.content)
 
 if __name__ == '__main__':
-    pass
+    main()
